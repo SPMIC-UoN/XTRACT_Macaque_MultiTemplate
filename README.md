@@ -1,18 +1,18 @@
 # XTRACT_Macaque_MultiTemplate
-XTRACT protocols for the Rhesus Macaque in 5 template spaces (F99, D99, NMTv2.0, INIA, Yerkes19).
+XTRACT protocols for the Rhesus Macaque in 5 template spaces (F99, D99, NMTv2.0, INIA19, Yerkes19).
 
 ### Overview ###
 XTRACT tractography protocols for the Macaque were originally developed using the F99 template space.
 However, there are various other templates commonly used. 
 
 Our F99-space protocols were transformed to 4 other macaque template spaces using the RheMAP pipeline, which is based on ANTs non-linear registration. 
-These templates were based on both in-vivo and ex-vivo anatomical (T1w) MRI data and included: D99, INIA19, NMTv2.0, Yerkes19 (YRK).
+These templates were based on both in-vivo and ex-vivo anatomical (T1w) MRI data and included: D99-SL (ex vivo), INIA19 (in vivo), NMTv2.0 (in vivo), Yerkes19 (YRK) (ex vivo).
 
 This repository includes a directory per template space, with each containing:
-1. A structural MR image in that space to be used as a reference.
-2. XTRACT tractography protocols (ie seed, target, exclusion ROIs) for 42 White Matter (WM) fibres, covering major association, commissural, projection and limbic fibres.
+1. Anatomical (T1w) MR image of the template (used as a reference).
+3. XTRACT tractography protocols (ie seed, target, exclusion ROIs) for 42 White Matter (WM) fibres, covering major association, commissural, projection and limbic fibres, in that template space.
 
-### Generalisation Method ###
+### Protocol Transformation Method ###
 
 - ANTs non-linear warp fields (obtained from Rhe-MAP) were converted to FSL format (to be used with XTRACT).
   
