@@ -10,7 +10,8 @@ These templates were based on both in-vivo and ex-vivo anatomical (T1w) MRI data
 
 This repository includes a directory per template space, with each containing:
 1. Anatomical (T1w) MR image of the template (used as a reference).
-3. XTRACT tractography protocols (ie seed, target, exclusion ROIs) for 42 White Matter (WM) fibres, covering major association, commissural, projection and limbic fibres, in that template space.
+2. XTRACT tractography protocols (ie seed, target, exclusion ROIs) for 42 White Matter (WM) fibres, covering major association, commissural, projection and limbic fibres, in that template space.
+3. Tract atlases per template, in the form of population percentage overlap. These spatial maps describe the percentage of animals for which a given tract is present at a given voxel.
 
 ### Protocol Transformation Method ###
 
